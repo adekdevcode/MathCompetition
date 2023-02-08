@@ -28,6 +28,8 @@ namespace MathCompetition
 
             var operation = Console.ReadKey();
 
+            Console.WriteLine();
+
             return operation;
         }
 
