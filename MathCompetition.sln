@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCompetition", "MathCompetition\MathCompetition.csproj", "{CB3F0A17-C8F2-4B93-B912-C792B93344DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB3F0A17-C8F2-4B93-B912-C792B93344DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB3F0A17-C8F2-4B93-B912-C792B93344DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB3F0A17-C8F2-4B93-B912-C792B93344DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB3F0A17-C8F2-4B93-B912-C792B93344DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98940E96-6797-4349-814D-22CDF4C78D92}
+	EndGlobalSection
+EndGlobal
