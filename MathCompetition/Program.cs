@@ -14,10 +14,12 @@
 ///// d2. Wyświetlę listę wyników
 
 using MathCompetition;
+using MathCompetition.App.Concrete;
+using MathCompetition.App.Managers;
 
 MenuActionService actionService = new MenuActionService();
 ResultService resultService = new ResultService();
-actionService = Initializer(actionService);
+ResultManager resultManager = new ResultManager(actionService, resultService);
 
 Console.WriteLine("Welcome to MathCompetition app!");
 
@@ -38,38 +40,22 @@ while (true)
     switch (operation.KeyChar)
     {
         case '1':
-            var keyInfo = resultService.AddNewResultView(actionService);
-            var id = resultService.AddNewResult(keyInfo.KeyChar);
+            var newId = resultManager.AddNewResult();
             break;
         case '2':
-            var removeId = resultService.RemoveResultView();
-            resultService.RemoveResult(removeId);
+            //var removeId = resultService.RemoveResultView();
+            //resultService.RemoveResult(removeId);
             break;
         case '3':
-            var detailId = resultService.DetailSelectionResultView();
-            resultService.ResultDetailView(detailId);
+            //var detailId = resultService.DetailSelectionResultView();
+            //resultService.ResultDetailView(detailId);
             break;
         case '4':
-            var resultId = resultService.ResultTypeSelectionView();
-            resultService.ResultByTypeIdView(resultId);
+            //var resultId = resultService.ResultTypeSelectionView();
+            //resultService.ResultByTypeIdView(resultId);
             break;
         default:
             Console.WriteLine("Action you entered does not exist");
             break;
     }
-}
-
-static MenuActionService Initializer(MenuActionService actionService)
-{
-    actionService.AddNewAction(1, "Add result", "Main");
-    actionService.AddNewAction(2, "Remove result", "Main");
-    actionService.AddNewAction(3, "Show result", "Main");
-    actionService.AddNewAction(4, "List of results", "Main");
-
-    actionService.AddNewAction(1, "KRZYZAK", "AddNewResultTypeView");
-    actionService.AddNewAction(2, "PRYMUS", "AddNewResultTypeView");
-    actionService.AddNewAction(3, "SZERYF", "AddNewResultTypeView");
-    actionService.AddNewAction(4, "OLIMPIJCZYCY", "AddNewResultTypeView");
-
-    return actionService;
 }

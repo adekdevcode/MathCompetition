@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MathCompetition
+namespace MathCompetition.Domain.Common
 {
-    public class MenuAction
+    public class BaseEntity : AuditableModel
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string MenuName { get; set; }
     }
 }

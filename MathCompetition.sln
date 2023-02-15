@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCompetition", "MathCompetition\MathCompetition.csproj", "{CB3F0A17-C8F2-4B93-B912-C792B93344DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCompetition", "MathCompetition\MathCompetition.csproj", "{CB3F0A17-C8F2-4B93-B912-C792B93344DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{18A0A368-A8E1-4867-B03B-13BC973258F7} = {18A0A368-A8E1-4867-B03B-13BC973258F7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCompetition.App", "MathCompetition.App\MathCompetition.App.csproj", "{18A0A368-A8E1-4867-B03B-13BC973258F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68D02AD0-6972-479C-90A2-7342721781CF} = {68D02AD0-6972-479C-90A2-7342721781CF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCompetition.Domain", "MathCompetition.Domain\MathCompetition.Domain.csproj", "{68D02AD0-6972-479C-90A2-7342721781CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,14 @@ Global
 		{CB3F0A17-C8F2-4B93-B912-C792B93344DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB3F0A17-C8F2-4B93-B912-C792B93344DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB3F0A17-C8F2-4B93-B912-C792B93344DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A0A368-A8E1-4867-B03B-13BC973258F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A0A368-A8E1-4867-B03B-13BC973258F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A0A368-A8E1-4867-B03B-13BC973258F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A0A368-A8E1-4867-B03B-13BC973258F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D02AD0-6972-479C-90A2-7342721781CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D02AD0-6972-479C-90A2-7342721781CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D02AD0-6972-479C-90A2-7342721781CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D02AD0-6972-479C-90A2-7342721781CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

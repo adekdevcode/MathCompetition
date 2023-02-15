@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MathCompetition
+namespace MathCompetition.Helpers
 {
     public enum ResultType
     {
